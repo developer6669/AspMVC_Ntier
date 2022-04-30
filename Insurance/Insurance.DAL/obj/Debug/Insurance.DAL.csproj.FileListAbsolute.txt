@@ -1,0 +1,12 @@
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\obj\Debug\Insurance.DAL.csproj.CoreCompileInputs.cache
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\bin\Debug\Insurance.DAL.dll.config
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\bin\Debug\Insurance.DAL.dll
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\bin\Debug\Insurance.DAL.pdb
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\bin\Debug\EntityFramework.dll
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\bin\Debug\EntityFramework.SqlServer.dll
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\bin\Debug\EntityFramework.xml
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\bin\Debug\EntityFramework.SqlServer.xml
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\obj\Debug\Insurance.DAL.csprojAssemblyReference.cache
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\obj\Debug\Insurance.DAL.csproj.CopyComplete
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\obj\Debug\Insurance.DAL.dll
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.DAL\obj\Debug\Insurance.DAL.pdb

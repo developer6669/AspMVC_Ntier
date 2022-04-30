@@ -1,0 +1,6 @@
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.Common\bin\Debug\Insurance.Common.dll
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.Common\bin\Debug\Insurance.Common.pdb
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.Common\obj\Debug\Insurance.Common.csprojAssemblyReference.cache
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.Common\obj\Debug\Insurance.Common.csproj.CoreCompileInputs.cache
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.Common\obj\Debug\Insurance.Common.dll
+G:\01-Web Application\Projects\Teleworking\TadbirKish\Insurance\Insurance.Common\obj\Debug\Insurance.Common.pdb

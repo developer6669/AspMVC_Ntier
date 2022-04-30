@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Insurance.DAL.Models.Database.InsuranceType>
+@{
+    ViewBag.Title = "Index";
+}
+
+@Html.Action("_Create")
+<hr />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InsuranceRate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MinFundValue)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxFundValue)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsuranceRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MinFundValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaxFundValue)
+            </td>
+            <td>
+                <a href="@Url.Action("Update", new { InsuranceTypeID = item.Id })" class="btn btn-xs btn-primary">ویرایش</a>
+                <a href="@Url.Action("Delete", new { InsuranceTypeID = item.Id })" class="btn btn-xs btn-default">حذف</a>
+            </td>
+        </tr>
+    }
+</table>

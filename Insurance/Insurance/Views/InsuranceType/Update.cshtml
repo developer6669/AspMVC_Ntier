@@ -1,0 +1,53 @@
+﻿@model Insurance.DAL.Models.Database.InsuranceType
+@{
+    ViewBag.Title = "Edit";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-horizontal">
+        <h4>Edit</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.InsuranceRate, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.InsuranceRate)
+                @Html.ValidationMessageFor(model => model.InsuranceRate)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.MinFundValue, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MinFundValue)
+                @Html.ValidationMessageFor(model => model.MinFundValue)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaxFundValue, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.MaxFundValue)
+                @Html.ValidationMessageFor(model => model.MaxFundValue)
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Update" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,35 @@
+﻿@model Insurance.DAL.Models.ViewModels.UserInsurance.UserInsuranceReadVm
+
+<table class="table">
+    <tr>
+        <th>
+            سرمایه
+        </th>
+        <th>
+            نرخ بیمه
+        </th>
+        <th>
+            مقدار بیمه
+        </th>
+        <th>
+            عملیات
+        </th>
+    </tr>
+    @foreach (var item in Model.ListInsurance)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FundValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsuranceRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsuranceValue)
+            </td>
+            <td>
+                <a href="@Url.Action("Delete", new { UserInsuranceID = item.Id })" class="btn btn-xs btn-default">حذف</a>
+            </td>
+        </tr>
+    }
+</table>

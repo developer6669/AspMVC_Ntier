@@ -1,0 +1,177 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container mey-rtl">
+    <div class="row">
+        <div class="col-md-12">
+            <h4>
+                عنوان پروژه: استعلام حق بیمه درمان
+            </h4>
+            <hr />
+        </div>
+        <div class="col-md-12">
+            <p>
+                هدف از این پروژه ارائه هزینه های درمان از طرف شرکت های بیمه به بیمه شدگان می باشد. در این پروژه درخواستی شامل پوشش های از قبل تعریف شده، برای سیستم محاسبه حق بیمه درمان ارسال شده و نهایتا هزینه ها محاسبه و نمایش داده می شود.
+            </p>
+            <p>
+                <b>نکته</b>
+                تمامی داده ها و نتایج در دیتابیس ذخیره می شود (انتخاب دیتابیس اختیاری است) از Entity Framework بعنوان ORM استفاده می شود.
+            </p>
+            <a href="@Url.Action("Index","UserInsurance")" class="btn btn-primary  mey-btn-primary">ورود به اپلیکیشن</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="timeline">
+        <div class="timeline-month">
+            تعاریف
+        </div>
+        <div class="timeline-section">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="timeline-box">
+                        <div class="box-title">
+                            <i class="fa fa-asterisk text-success" aria-hidden="true"></i>پوشش ها
+                        </div>
+                        <div class="box-content">
+                            <a class="btn btn-xs btn-default pull-right">Details</a>
+                            <div class="box-item"><strong>انواع پوشش بیمه ای</strong></div>
+                            <ul>
+                                <li>
+                                    پوشش جراحی
+                                </li>
+                                <li>
+                                    پوشش دندانپزشکی
+                                </li>
+                                <li>
+                                    پوشش بستری
+                                </li>
+                            </ul>
+                            <p>
+                                <b>نکته</b>
+                                منظور از پوشش خدمتی است که شرکت بیمه ارائه میدهد.
+                            </p>
+                            <p>
+                                حداقل و حداکثر سرمایه هایی که میتوان برای سه نوع پوشش وارد نمود به شرح ذیل می باشد:
+                            </p>
+                            <ul>
+                                <li>
+                                    <b>پوشش جراحی</b>
+                                    <ul>
+                                        <li>
+                                            a.	این پوشش حداقل 5000 و حداکثر 500000000 سرمایه می تواند داشته باشد.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>پوشش فوت دندانپزشکی</b>
+                                    <ul>
+                                        <li>
+                                            a.	این پوشش حداقل 4000 و حداکثر 400000000 سرمایه می تواند داشته باشد.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>پوشش بستری</b>
+                                    <ul>
+                                        <li>
+                                            a.	این پوشش حداقل 2000 و حداکثر 200000000 سرمایه می تواند داشته باشد.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-footer">- توضیحات</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-section">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="timeline-box">
+                        <div class="box-title">
+                            <i class="fa fa-pencil text-info" aria-hidden="true"></i> درخواست
+                        </div>
+                        <div class="box-content">
+                            <a class="btn btn-xs btn-default pull-right">Details</a>
+                            <div class="box-item"><strong>ثبت درخواست</strong></div>
+                            <p>جهت ثبت درخواست اطلاعات زیر از کاربر دریافت می شود: </p>
+                            <ul>
+                                <li>
+                                    <b>عنوان درخواست:</b>
+                                     اجباری
+                                </li>
+                                <li>
+                                    <b>پوشش:</b>
+                                     اجباری
+                                    <ul>
+                                        <li>
+                                            a.	از بین پوششهای ذکر شده در بالا انتخاب شود.
+                                        </li>
+                                        <li>
+                                            b.	هر درخواست میتواند حداقل یک یا هر سه پوشش را داشته باشد.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>سرمایه:</b>
+                                    اجباری
+                                    <ul>
+                                        <li>
+                                            a.	مقدار وارد شده در این فیلد باید در محدوده حداقل و حداکثر سرمایه تعیین شده برای پوشش باشد.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-footer">- توصیحات</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-section">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="timeline-box">
+                        <div class="box-title">
+                            <i class="fa fa-pencil text-info" aria-hidden="true"></i> حق بیمه 
+                        </div>
+                        <div class="box-content">
+                            <a class="btn btn-xs btn-default pull-right">Details</a>
+                            <div class="box-item"><strong>حق بیمه خالص</strong></div>
+                            <p>
+                                حق بیمه خالص هر پوشش، از ضرب کردن سرمایه وارد شده برای پوشش در نرخ تعیین شده، بدست می آید. نتایج محاسبه ذخیره شده و به کاربر نیز نمایش داده شود.
+                            </p>
+                            <b>
+                                روش محاسبه پوششها:
+                            </b>
+                            <ul>
+                                <li>
+                                    <b>پوشش جراحی</b>
+                                    سرمایه *  نرخ 0.0052 محاسبه شود .
+                                </li>
+                                <li>
+                                    <b>پوشش دندانپزشکی</b>
+                                    سرمایه * نرخ 0.0042 محاسبه شود
+                                </li>
+                                <li>
+                                    <b>پوشش بستری</b>
+                                    سرمایه * نرخ 0.005 محاسبه شود
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box-footer">
+                            حق بیمه خالص درخواست ارسال شده برابر خواهد بود با جمع حق بیمه خالص پوشش های انتخاب شده.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

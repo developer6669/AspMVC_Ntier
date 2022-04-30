@@ -1,0 +1,60 @@
+﻿@model Insurance.DAL.Models.Database.InsuranceType
+@{
+    ViewBag.Title = "Add";
+}
+@using (Html.BeginForm("Create", "InsuranceType", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+<div class="form-horizontal">
+    <h4>پوشش های بیمه ای </h4>
+    <hr />
+    @Html.ValidationSummary(true)
+    <div class="col-md-12">
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "control-label" })
+            <div class="">
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            @Html.LabelFor(model => model.InsuranceRate, new { @class = "control-label" })
+            <div class="">
+                @Html.TextBoxFor(model => model.InsuranceRate, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.InsuranceRate)
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            @Html.LabelFor(model => model.MinFundValue, new { @class = "control-label" })
+            <div class="">
+                @Html.TextBoxFor(model => model.MinFundValue, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MinFundValue)
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="form-group">
+            @Html.LabelFor(model => model.MaxFundValue, new { @class = "control-label" })
+            <div class="">
+                @Html.TextBoxFor(model => model.MaxFundValue, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.MaxFundValue)
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="form-group">
+            <div class="">
+                <input type="submit" value="افزودن" class="btn btn-primary mey-btn" />
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

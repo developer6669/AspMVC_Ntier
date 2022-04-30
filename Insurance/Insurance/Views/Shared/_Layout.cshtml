@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar navbar-inverse mey-navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="https://Developer6669.com" class="navbar-brand">Developer6669.com</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("صفحه اصلی", "Index", "Home")</li>
+                    <li>@Html.ActionLink("تعریف پوشش بیمه ای", "Index", "InsuranceType")</li>
+                    <li>@Html.ActionLink("ثبت درخواست", "Index", "UserInsurance")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content mey-rtl">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Insurance ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        .mey-navbar-inverse {
+            background-color: #fff;
+            border-color: #ffffff;
+            box-shadow: 0 0 30px rgb(0 0 0 / 6%);
+        }
+        .mey-btn{
+            border-radius:3rem;
+        }
+        .mey-rtl{
+            direction:rtl;
+        }
+    </style>
+</body>
+</html>
